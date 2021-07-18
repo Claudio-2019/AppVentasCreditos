@@ -15,6 +15,12 @@ namespace AppVentas
         public Carrito()
         {
             InitializeComponent();
+            btnLogout.Clicked += BtnLogout_Clicked;
+        }
+
+        private void BtnLogout_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MainPage());
         }
     }
 }

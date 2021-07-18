@@ -5,9 +5,9 @@
 
     <ContentPage.ToolbarItems>
 
-        <ToolbarItem IconImageSource="carrito.png" Priority="0" Order="Primary" x:Name="bntCarrito"/>
+        <ToolbarItem IconImageSource="carrito.png" Priority="0" Order="Primary" x:Name="btnCarrito"/>
 
-        <ToolbarItem Text="Logout" Priority="1"   x:Name="bntLogout"/>
+        <ToolbarItem Text="Cerrar sesión" Priority="1"   x:Name="btnLogout"/>
     </ContentPage.ToolbarItems>
     <ScrollView>
         <StackLayout Padding="15,15,15,15" BackgroundColor="#EFEDEF">

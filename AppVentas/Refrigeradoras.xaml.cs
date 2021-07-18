@@ -15,13 +15,19 @@ namespace AppVentas
         public Refrigeradoras()
         {
             InitializeComponent();
-            bntCarrito.Clicked += BntCarrito_Clicked;
+            btnCarrito.Clicked += BtnCarrito_Clicked;
+            btnLogout.Clicked += BtnLogout_Clicked;
         }
 
-        private void BntCarrito_Clicked(object sender, EventArgs e)
+        private void BtnLogout_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MainPage());
+        }
+
+        private void BtnCarrito_Clicked(object sender, EventArgs e)
         {
             ((NavigationPage)this.Parent).PushAsync(new Carrito());
-
         }
+
     }
 }
