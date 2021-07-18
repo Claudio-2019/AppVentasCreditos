@@ -1151,3 +1151,4 @@ C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\drawable\gollo.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\drawable\carrito.png

@@ -86,7 +86,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\carrito.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppVentas\AppVentas.csproj">
       <Project>{F957CD37-92DC-4AF4-A615-2C837EF1BD70}</Project>
