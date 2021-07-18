@@ -12,3 +12,18 @@ C:\Users\ClaudioPC\Desktop\Desarollo de software\MOVIL\AppVentas\AppVentas\obj\D
 C:\Users\ClaudioPC\Desktop\Desarollo de software\MOVIL\AppVentas\AppVentas\obj\Debug\netstandard2.0\ref\AppVentas.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\MOVIL\AppVentas\AppVentas\obj\Debug\netstandard2.0\AppVentas.pdb
 C:\Users\ClaudioPC\Desktop\Desarollo de software\MOVIL\AppVentas\AppVentas\obj\Debug\netstandard2.0\AppVentas.csproj.AssemblyReference.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\AppVentas.deps.json
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\AppVentas.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\ref\AppVentas.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\AppVentas.pdb
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.csproj.AssemblyReference.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.AssemblyInfoInputs.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.AssemblyInfo.cs
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.csproj.CoreCompileInputs.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\ref\AppVentas.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.pdb
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\MenuPrincipal.xaml.g.cs

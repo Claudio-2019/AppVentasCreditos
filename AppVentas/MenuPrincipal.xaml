@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVentas.MenuPrincipal">
+    <ContentPage.Content>
+        <StackLayout Padding="15,15,15,15" BackgroundColor="#EFEDEF">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="gollo.png" Aspect="AspectFit" WidthRequest="60" HeightRequest="60" />
+                <Label VerticalTextAlignment="Center" Text="&#xf07a;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="40" TextColor="#00ade5" HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand" FontAttributes="Bold"/>
+            </StackLayout>
+            <FlexLayout Direction="Column" Margin="0,20,0,20" >
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
+            </FlexLayout>
+            <Label Text="Menú Principal" FontSize="35" TextColor="#0167B8" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <FlexLayout Direction="Column" Margin="0,20,0,20" >
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
+            </FlexLayout>
+            <Label Text="Ver productos" FontSize="25" TextColor="#0167B8" HorizontalTextAlignment="Center" Margin="0,20,0,0" />
+            <Button Text="Refrigeradoras" BackgroundColor="#017ac4" TextColor="#FFFFFF" BorderRadius="5"/>
+            <Button Text="Lavadoras" BackgroundColor="#017ac4" TextColor="#FFFFFF" BorderRadius="5" />
+            <Button Text="Cocinas" BackgroundColor="#017ac4" TextColor="#FFFFFF"  BorderRadius="5"/>
+            <FlexLayout Direction="Column" Margin="0,20,0,20" >
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightGray"/>
+            </FlexLayout>
+            <Label Text="Mi perfil" FontSize="25" TextColor="#0167B8" HorizontalTextAlignment="Center" />
+            <Button Text="Compras anteriores" BackgroundColor="#FFFFFF" TextColor="#00ade5" BorderRadius="5"/>
+            <Button Text="Realizar abono" BackgroundColor="#FFFFFF" TextColor="#00ade5" BorderRadius="5" />
+            <FlexLayout Direction="Column" Margin="0,20,0,20" >
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightGray"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

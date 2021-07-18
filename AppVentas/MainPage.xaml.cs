@@ -13,6 +13,11 @@ namespace AppVentas
         public MainPage()
         {
             InitializeComponent();
+            btnIr.Clicked += BtnIr_Clicked;
+        }
+        private void BtnIr_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
     }
 }

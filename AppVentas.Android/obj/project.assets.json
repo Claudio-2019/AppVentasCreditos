@@ -2142,27 +2142,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ClaudioPC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\carri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\MOVIL\\AppVentas\\AppVentas.Android\\AppVentas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
       "projectName": "AppVentas.Android",
-      "projectPath": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\MOVIL\\AppVentas\\AppVentas.Android\\AppVentas.Android.csproj",
-      "packagesPath": "C:\\Users\\ClaudioPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\MOVIL\\AppVentas\\AppVentas.Android\\obj\\",
+      "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "packagesPath": "C:\\Users\\carri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ClaudioPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\carri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2176,8 +2173,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\MOVIL\\AppVentas\\AppVentas\\AppVentas.csproj": {
-              "projectPath": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\MOVIL\\AppVentas\\AppVentas\\AppVentas.csproj"
+            "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
+              "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
             }
           }
         }
