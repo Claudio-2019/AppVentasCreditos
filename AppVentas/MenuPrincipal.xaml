@@ -2,10 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppVentas.MenuPrincipal">
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem IconImageSource="carrito.png" Priority="0" Order="Primary" x:Name="btnCarrito"/>
+
+        <ToolbarItem Text="Cerrar sesión" Priority="1"   x:Name="btnLogout"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout Padding="15,15,15,15" BackgroundColor="#EFEDEF">
             <StackLayout Orientation="Horizontal">
-                <Image Source="gollo.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" WidthRequest="60" HeightRequest="60" />
+                <Image Source="gollo.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Aspect="AspectFit" WidthRequest="70" HeightRequest="70" />
 
             </StackLayout>
             <FlexLayout Direction="Column" Margin="0,20,0,20" >

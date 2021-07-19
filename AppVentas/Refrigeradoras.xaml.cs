@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppVentas.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace AppVentas
             InitializeComponent();
             btnCarrito.Clicked += BtnCarrito_Clicked;
             btnLogout.Clicked += BtnLogout_Clicked;
+            BindingContext = new MainPageViewModel();
         }
 
         private void BtnLogout_Clicked(object sender, EventArgs e)

@@ -15,7 +15,9 @@ namespace AppVentas
         public MenuPrincipal()
         {
             InitializeComponent();
-        
+            btnCarrito.Clicked += BtnCarrito_Clicked;
+            btnLogout.Clicked += BtnLogout_Clicked;
+
         }
 
         private void btnRefrigeradoras_Clicked(object sender, EventArgs e)
@@ -33,6 +35,16 @@ namespace AppVentas
         private void btnCocinas_Clicked(object sender, EventArgs e)
         {
             ((NavigationPage)this.Parent).PushAsync(new Cocinas());
+        }
+
+        private void BtnLogout_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MainPage());
+        }
+
+        private void BtnCarrito_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Carrito());
         }
     }
 }
