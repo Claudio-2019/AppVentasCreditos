@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppVentas.Cocinas">
     <ContentPage.ToolbarItems>
-
+        <ToolbarItem IconImageSource="gollo.png" Priority="0" Order="Primary" x:Name="btnInicio"/>
         <ToolbarItem IconImageSource="carrito.png" Priority="0" Order="Primary" x:Name="btnCarrito"/>
 
         <ToolbarItem Text="Cerrar sesión" Priority="1"   x:Name="btnLogout"/>

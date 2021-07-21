@@ -10,24 +10,25 @@ using Xamarin.Forms.Xaml;
 namespace AppVentas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cocinas : ContentPage
+    public partial class DetalleCompra : ContentPage
     {
-        public Cocinas()
+        public DetalleCompra()
         {
             InitializeComponent();
             btnCarrito.Clicked += BtnCarrito_Clicked;
-            btnLogout.Clicked += BtnLogout_Clicked;
             btnInicio.Clicked += BtnInicio_Clicked;
-        }
+            btnLogout.Clicked += BtnLogout_Clicked;
 
-        private void BtnInicio_Clicked(object sender, EventArgs e)
-        {
-            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
 
         private void BtnLogout_Clicked(object sender, EventArgs e)
         {
             ((NavigationPage)this.Parent).PushAsync(new MainPage());
+        }
+
+        private void BtnInicio_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
 
         private void BtnCarrito_Clicked(object sender, EventArgs e)

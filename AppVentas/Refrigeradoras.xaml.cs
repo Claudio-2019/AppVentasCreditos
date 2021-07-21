@@ -18,7 +18,13 @@ namespace AppVentas
             InitializeComponent();
             btnCarrito.Clicked += BtnCarrito_Clicked;
             btnLogout.Clicked += BtnLogout_Clicked;
-            BindingContext = new MainPageViewModel();
+            btnInicio.Clicked += BtnInicio_Clicked;
+            BindingContext = new MainPageViewModel();//por cambiar por vista de refrigeradoras
+        }
+
+        private void BtnInicio_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
 
         private void BtnLogout_Clicked(object sender, EventArgs e)

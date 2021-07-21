@@ -17,6 +17,12 @@ namespace AppVentas
             InitializeComponent();
             btnCarrito.Clicked += BtnCarrito_Clicked;
             btnLogout.Clicked += BtnLogout_Clicked;
+            btnInicio.Clicked += BtnInicio_Clicked;
+        }
+
+        private void BtnInicio_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
 
         private void BtnLogout_Clicked(object sender, EventArgs e)
