@@ -31,3 +31,4 @@ C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstan
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.dll
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\ref\AppVentas.dll
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.pdb
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Registro.xaml.g.cs

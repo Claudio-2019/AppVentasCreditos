@@ -14,10 +14,19 @@ namespace AppVentas
         {
             InitializeComponent();
             btnIr.Clicked += BtnIr_Clicked;
+            btnRegistro.Clicked += BtnRegistro_Clicked;
         }
+
+        private void BtnRegistro_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Registro());
+        }
+
         private void BtnIr_Clicked(object sender, EventArgs e)
         {
             ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
+
+
     }
 }
