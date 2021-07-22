@@ -17,7 +17,13 @@ namespace AppVentas
             InitializeComponent();
             btnCarrito.Clicked += BtnCarrito_Clicked;
             btnLogout.Clicked += BtnLogout_Clicked;
+            btnComprasAnt.Clicked += BtnComprasAnt_Clicked;
 
+        }
+
+        private void BtnComprasAnt_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new ComprasAnteriores());
         }
 
         private void btnRefrigeradoras_Clicked(object sender, EventArgs e)
