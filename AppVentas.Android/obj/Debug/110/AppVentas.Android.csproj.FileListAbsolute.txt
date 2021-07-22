@@ -1157,3 +1157,8 @@ C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\drawable\refri2.png
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\drawable\refri3.png
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\drawable\refri4.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\mipmap-hdpi\gollo.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\mipmap-mdpi\gollo.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\mipmap-xhdpi\gollo.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\mipmap-xxhdpi\gollo.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\110\res\mipmap-xxxhdpi\gollo.png
