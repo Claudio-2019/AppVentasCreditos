@@ -7,8 +7,8 @@
         <StackLayout  BackgroundColor="#EFEDEF" Padding="15,15,15,15" >
        
            
-                <Image Source="gollo.png" Aspect="AspectFit" WidthRequest="80" HeightRequest="80" Margin="0,5,5,0"/>
-        <FlexLayout Direction="Column" Margin="0,5,0,5" >
+                <Image Source="gollo.png" Aspect="AspectFit" WidthRequest="100" HeightRequest="100" Margin="0,5,5,0"/>
+        <FlexLayout Direction="Column" Margin="0,10,0,10" >
             <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
         </FlexLayout>
 
@@ -22,17 +22,13 @@
             <Label Text="Apellidos" TextColor="#333333" FontSize="Medium"/>
             <Entry Placeholder="&#xf2bb;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
 
-            <Label Text="Correo" TextColor="#333333" FontSize="Medium"/>
+            <Label Text="Email" TextColor="#333333" FontSize="Medium"/>
             <Entry Placeholder="&#xf674;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
 
             <Label Text="Teléfono" TextColor="#333333" FontSize="Medium"/>
-            <Entry Placeholder="&#xf095;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+                <Entry Placeholder="&#xf095;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
 
-            <Label Text="Nombre de usuario" TextColor="#333333" FontSize="Medium"/>
-            <Entry Placeholder="&#xf4fc;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
-
-
-            <Label Text="Contraseña" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
+                <Label Text="Contraseña" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
             <Entry Placeholder="&#xf023;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" IsPassword="True" TextColor="#333333"/>
 
 
