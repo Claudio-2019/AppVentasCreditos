@@ -11,33 +11,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Carrito.xaml">
+    <EmbeddedResource Update="Screens\Carrito.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Cocinas.xaml">
+    <EmbeddedResource Update="Screens\Cocinas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ComprasAnteriores.xaml">
+    <EmbeddedResource Update="Screens\ComprasAnteriores.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="DetalleCompra.xaml">
+    <EmbeddedResource Update="Screens\DetalleCompra.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Lavadoras.xaml">
+    <EmbeddedResource Update="Screens\Lavadoras.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MenuPrincipal.xaml">
+    <EmbeddedResource Update="Screens\MenuPrincipal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Refrigeradoras.xaml">
+    <EmbeddedResource Update="Screens\Refrigeradoras.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Registro.xaml">
+    <EmbeddedResource Update="Screens\Registro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

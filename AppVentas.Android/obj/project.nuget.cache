@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wVTq0vmMYbC7aGCudW22TNFz939GiMEhS6sOatvbPBGTE1g3l8aKze6tdp6Oj0g0Qq1KRRZ2rAp7oJSJlQx3pg==",
+  "dgSpecHash": "I0dPorKRpEHEiwZjW+o235CspS6/Z4L6tSOdK2qheD9HQ+7F6ds6euRA/GoY158Kq1t+bRTtQh4RlAE9XvOpaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+  "projectFilePath": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\carri\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",
