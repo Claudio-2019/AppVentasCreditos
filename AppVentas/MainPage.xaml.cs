@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppVentas.Backend.Models;
+using AppVentas.Backend.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -10,6 +12,9 @@ namespace AppVentas
 {
     public partial class MainPage : ContentPage
     {
+        private ServiceLogin serviceLogin = new ServiceLogin();
+        private DTOUser usuario;
+
         public MainPage()
         {
             InitializeComponent();
@@ -24,9 +29,28 @@ namespace AppVentas
 
         private void BtnIr_Clicked(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
+            usuario = new DTOUser
+            {
+                nombre = "",
+                cedula = "",
+                apellidos = "",
+                email = this.inputCorreo.Text,
+                telefono = "",
+                residencia = "",
+                rolId = 1,
+                contraseña = this.inputContrasena.Text
+            };
+
+            string rol = serviceLogin.authentication(usuario);
+
+            if (rol.Equals("Admin"))
+            {
+                ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
+            }
+            else
+            {
+                DisplayAlert("Error en autenticacion","Credenciales ivalidas","Ok");
+            }
         }
-
-
     }
 }

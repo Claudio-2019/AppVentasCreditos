@@ -15,7 +15,7 @@ namespace AppVentas.Backend.Services
 
 
             using (SqlConnection sqlConnection = new
-                SqlConnection(@"Data source=DESKTOP-S5L1269\SQLEXPRESS;Initial Catalog=GolloVentasDB;Integrated Security=True"))
+                SqlConnection(@"Data Source=DESKTOP-E9988JL\SQLEXPRESS;Initial Catalog=GolloVentasDB-test;Integrated Security=True"))
             {
                 SqlCommand sqlCommand = new SqlCommand(@"INSERT INTO usuario (cedula, nombre, apellidos, 
                                                             email, telefono, residencia, rolId,contrasena) VALUES 

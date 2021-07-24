@@ -56,3 +56,24 @@ D:\APP EN XAMARIN\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas
 D:\APP EN XAMARIN\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\ref\AppVentas.dll
 D:\APP EN XAMARIN\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.pdb
 D:\APP EN XAMARIN\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.csprojAssemblyReference.cache
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\AppVentas.deps.json
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\AppVentas.dll
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\ref\AppVentas.dll
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\bin\Debug\netstandard2.0\AppVentas.pdb
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Carrito.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Cocinas.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\ComprasAnteriores.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\DetalleCompra.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Lavadoras.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\MenuPrincipal.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Refrigeradoras.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Registro.xaml.g.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.AssemblyInfoInputs.cache
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.AssemblyInfo.cs
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.csproj.CoreCompileInputs.cache
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.dll
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\ref\AppVentas.dll
+C:\Users\RandolphAntonioMoral\Documents\GitHub\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.pdb

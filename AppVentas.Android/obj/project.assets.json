@@ -2248,18 +2248,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\": {},
+    "C:\\Users\\RandolphAntonioMoral\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
       "projectName": "AppVentas.Android",
-      "projectPath": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
-      "packagesPath": "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\",
-      "outputPath": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas.Android\\obj\\",
+      "projectPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "packagesPath": "C:\\Users\\RandolphAntonioMoral\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2267,7 +2267,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Soporte TI MBS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RandolphAntonioMoral\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -2282,8 +2282,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
-              "projectPath": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
+            "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
+              "projectPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
             }
           }
         }

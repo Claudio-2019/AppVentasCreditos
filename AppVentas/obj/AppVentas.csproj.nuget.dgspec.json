@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {}
+    "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {}
   },
   "projects": {
-    "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
+    "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
+        "projectUniqueName": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
         "projectName": "AppVentas",
-        "projectPath": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
-        "packagesPath": "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\",
-        "outputPath": "D:\\APP EN XAMARIN\\AppVentasCreditos\\AppVentas\\obj\\",
+        "projectPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
+        "packagesPath": "C:\\Users\\RandolphAntonioMoral\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Soporte TI MBS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RandolphAntonioMoral\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -75,7 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
