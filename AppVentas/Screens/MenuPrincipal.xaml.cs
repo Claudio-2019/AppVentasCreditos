@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppVentas.Screens;
 
 namespace AppVentas
 {
@@ -24,7 +25,7 @@ namespace AppVentas
 
         private void BtnAbono_Clicked(object sender, EventArgs e)
         {
-            
+            ((NavigationPage)this.Parent).PushAsync(new Abono());
         }
 
         private void BtnComprasAnt_Clicked(object sender, EventArgs e)

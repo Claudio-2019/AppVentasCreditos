@@ -29,6 +29,7 @@ namespace AppVentas
 
         private void BtnIr_Clicked(object sender, EventArgs e)
         {
+          
             usuario = new DTOUser
             {
                 nombre = "",
