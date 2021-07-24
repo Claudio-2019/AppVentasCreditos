@@ -24,7 +24,7 @@ namespace AppVentas
 
         private void BtnAbono_Clicked(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void BtnComprasAnt_Clicked(object sender, EventArgs e)
