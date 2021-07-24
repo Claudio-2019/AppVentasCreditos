@@ -1158,26 +1158,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RandolphAntonioMoral\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\carri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
+      "projectUniqueName": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
       "projectName": "AppVentas",
-      "projectPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
-      "packagesPath": "C:\\Users\\RandolphAntonioMoral\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RandolphAntonioMoral\\Documents\\GitHub\\AppVentasCreditos\\AppVentas\\obj\\",
+      "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
+      "packagesPath": "C:\\Users\\carri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\RandolphAntonioMoral\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\carri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

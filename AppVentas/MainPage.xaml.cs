@@ -28,8 +28,8 @@ namespace AppVentas
         }
 
         private void BtnIr_Clicked(object sender, EventArgs e)
-        {
-            usuario = new DTOUser
+        {((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
+            /*usuario = new DTOUser
             {
                 nombre = "",
                 cedula = "",
@@ -50,7 +50,7 @@ namespace AppVentas
             else
             {
                 DisplayAlert("Error en autenticacion","Credenciales ivalidas","Ok");
-            }
+            }*/
         }
     }
 }

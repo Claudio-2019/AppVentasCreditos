@@ -18,7 +18,13 @@ namespace AppVentas
             btnCarrito.Clicked += BtnCarrito_Clicked;
             btnLogout.Clicked += BtnLogout_Clicked;
             btnComprasAnt.Clicked += BtnComprasAnt_Clicked;
+            btnAbono.Clicked += BtnAbono_Clicked;
 
+        }
+
+        private void BtnAbono_Clicked(object sender, EventArgs e)
+        {
+           
         }
 
         private void BtnComprasAnt_Clicked(object sender, EventArgs e)
