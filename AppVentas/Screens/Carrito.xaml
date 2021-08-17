@@ -16,53 +16,49 @@
             <FlexLayout Direction="Column" Margin="0,20,0,20" >
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
             </FlexLayout>
-          
-            <CollectionView ItemsSource="{Binding listaRefris}"  HeightRequest="550">
+            <CollectionView x:Name="listaCarrito" HeightRequest="490" SelectionMode="Single" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame Padding="0,20,0,20"
-                              
-                               IsClippedToBounds="False"
-                               BackgroundColor="#EFEDEF">
-                            <Grid HeightRequest="100">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width=".3*"/>
-                                    <ColumnDefinition Width=".4*"/>
-                                    <ColumnDefinition Width=".3*"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height=".5*"/>
-                                    <RowDefinition Height=".5*"/>
-                                </Grid.RowDefinitions>
-                                <Image Grid.RowSpan="2" Source="listaRefris.imagen"/>
-                                <Label Grid.Column="1"
+                        <Grid HeightRequest="100" Padding="15">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="White" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".3*"/>
+                                <ColumnDefinition Width=".4*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height=".5*"/>
+                                <RowDefinition Height=".5*"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.RowSpan="2" Source="{Binding imagen}"/>
+                            <Label Grid.Column="1"
                                        FontAttributes="Bold"
                                        FontSize="Large"
-                                       Text="{Binding listaRefris.descripcion}"
+                                       Text="{Binding nombre}"
                                        VerticalOptions="Center"/>
-                                <Label
+                            <Label
                                     Grid.Row="1"
                                     Grid.Column="1"
                                     FontSize="Medium"
-                                    Text="{Binding  listaRefris.nombre,StringFormat='{0:N}'}"/>
+                                    Text="{Binding precio,StringFormat='{0:N}'}"/>
 
-                                <Button
-                                    Grid.Row="1"
-                                    Grid.Column="2"
-                                    BackgroundColor="DarkRed" TextColor="White" BorderRadius="10"
-                                    Text="Quitar" 
-                                    x:Name="btnEliminarItem"
-                                    Clicked="EliminarItemCarrito"
-                                    />
+                        </Grid>
 
-                                <Button Text="Finalizar compra" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnFinalizar" Margin="0,20,0,0" />
-
-                            </Grid>
-                        </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <Button Text="Eliminar" BackgroundColor="DarkRed" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnEliminar" Margin="0,10,0,0" />
             <Button Text="Continuar con la compra" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnCompra" Margin="0,10,0,0" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
+

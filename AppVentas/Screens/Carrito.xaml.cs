@@ -1,9 +1,11 @@
-﻿using AppVentas.Models;
+﻿using AppVentas.Backend.Models;
+using AppVentas.Models;
 using AppVentas.ViewModels;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,11 +17,9 @@ namespace AppVentas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Carrito : ContentPage
     {
-        private DTOProducto Refri1;
-        private DTOProducto Refri2;
-        private DTOProducto Refri3;
-        private DTOProducto Refri4;
-        private DTOProducto Refri5;
+        private string url = App.url + "Articulos";
+
+        HttpClient cliente = new HttpClient();
 
         public List<DTOProducto> listaRefris = new List<DTOProducto>();
         public Carrito()
@@ -28,54 +28,32 @@ namespace AppVentas
             btnLogout.Clicked += BtnLogout_Clicked;
             btnInicio.Clicked += BtnInicio_Clicked;
             btnCompra.Clicked += BtnCompra_Clicked;
-            BindingContext = new MainPageViewModel();//por cambiar por vista de carrito, elementos seleccionados
-
-             Refri1 = new DTOProducto
+            btnEliminar.Clicked += BtnEliminar_Clicked;
+            listaCarrito.SelectionChanged += ListaCarrito_SelectionChanged;
+        }
+        private ArticuloModel articuloSeleccionado = new ArticuloModel();
+        private void ListaCarrito_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var articulos = e.CurrentSelection;
+            for (int i = 0; i < articulos.Count; i++)
             {
-                id = 1,
-                descripcion = "Refrigeradora 1",
-                imagen = "refri1.png",
-                nombre = "Refrigeradora 1"
+                var articulo = articulos[i] as ArticuloModel;
+                articuloSeleccionado = articulo;
+            }
+        }
 
-            };
-             Refri2 = new DTOProducto
-            {
-                id = 2,
-                descripcion = "Refrigeradora 2",
-                imagen = "refri2.png",
-                nombre = "Refrigeradora 2"
+        protected override void OnAppearing()
+        {
 
-            };
-             Refri3 = new DTOProducto
-            {
-                id = 3,
-                descripcion = "Refrigeradora 3",
-                imagen = "refri3.png",
-                nombre = "Refrigeradora 3"
+            listaCarrito.ItemsSource = App.Carrito;
+            base.OnAppearing();
+        }
 
-            };
-             Refri4 = new DTOProducto
-            {
-                id = 4,
-                descripcion = "Refrigeradora 4",
-                imagen = "refri4.png",
-                nombre = "Refrigeradora 4"
-
-            };
-             Refri5 = new DTOProducto
-            {
-                id = 5,
-                descripcion = "Refrigeradora 5",
-                imagen = "refri5.png",
-                nombre = "Refrigeradora 5"
-
-            };
-
-            listaRefris.Add(Refri1);
-            listaRefris.Add(Refri2);
-            listaRefris.Add(Refri3);
-            listaRefris.Add(Refri4);
-            listaRefris.Add(Refri5);
+        private async void BtnEliminar_Clicked(object sender, EventArgs e)
+        {
+            App.Carrito.Remove(articuloSeleccionado);
+            await DisplayAlert("Producto eliminado", "El producto " + articuloSeleccionado.nombre + " fue eliminado exitosamente", "OK");
+          
         }
 
         private void BtnCompra_Clicked(object sender, EventArgs e)
@@ -93,9 +71,5 @@ namespace AppVentas
             ((NavigationPage)this.Parent).PushAsync(new MainPage());
         }
 
-        async void EliminarItemCarrito(object sender,EventArgs e)
-        {
-            
-        }
     }
 }
