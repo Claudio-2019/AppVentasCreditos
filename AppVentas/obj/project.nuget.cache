@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7zfzHqL4LbZctYchSnl3b3+DMrywpK141SE8vJvtqt7J5RC3EdCYb0BlTzh1v5X5y+L9YjhDaoUfauw300NDeQ==",
+  "dgSpecHash": "MeqAtynqDqaEM01YNYEtD0bbwL5qwAObnlguZZnMdnA/VyE9ydO2gFrL7zp7pqAbHbYQY8X749HvrrLKFtEKew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
+  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carri\\.nuget\\packages\\localhost\\1.0.0\\localhost.1.0.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

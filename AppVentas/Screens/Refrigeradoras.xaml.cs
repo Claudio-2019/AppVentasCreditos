@@ -28,7 +28,14 @@ namespace AppVentas
             btnLogout.Clicked += BtnLogout_Clicked;
             btnInicio.Clicked += BtnInicio_Clicked;
             listaRefri.SelectionChanged += ListaRefri_SelectionChanged;
+            btnAgregar.Clicked += BtnAgregar_Clicked;
            
+        }
+
+        private async void BtnAgregar_Clicked(object sender, EventArgs e)
+        {
+            App.Carrito.Add(articuloSeleccionado);
+            await DisplayAlert("Producto agregado", "El producto " + articuloSeleccionado.nombre + " fue agregado exitosamente", "OK");
         }
 
         private ArticuloModel articuloSeleccionado = new ArticuloModel();
@@ -48,11 +55,19 @@ namespace AppVentas
         }
 
         IList<ArticuloModel> lista = new ObservableCollection<ArticuloModel>();
+        IList<ArticuloModel> Refris = new ObservableCollection<ArticuloModel>();
         protected override async void OnAppearing()//Mostrar articulos disponibles (filtrar por categoria 1, que seria refris)
         {
             string contenido = await cliente.GetStringAsync(url);
            lista =  JsonConvert.DeserializeObject<IList<ArticuloModel>>(contenido);
-            listaRefri.ItemsSource = new ObservableCollection<ArticuloModel>(lista);
+            for (int i = 0; i < lista.Count(); i++)
+            {
+                //Categoria 1 es para refris
+                if (lista[i].categoriaId==1) {
+                    Refris.Add(lista[i]);
+                }
+            }
+            listaRefri.ItemsSource = new ObservableCollection<ArticuloModel>(Refris);
             base.OnAppearing();
         }
 
@@ -66,23 +81,6 @@ namespace AppVentas
             ((NavigationPage)this.Parent).PushAsync(new Carrito());
         }
 
-        async void InsertIntoCarrito(object sender, EventArgs e)
-        {
-            /* await DisplayAlert("Alert" , "El producto fue agregado exitosamente" , "OK");
-
-             ((NavigationPage)this.Parent).PushAsync(new DetalleCompra());*/
-
-            /*for (int i = 0; i < lista.Count(); i++)
-            {
-                if (lista[i].articuloId == Convert.ToInt32(listaRefri.SelectedItem.ToString())) {
-                    pruebas.Text = pruebas.Text + listaRefri.SelectedItem.ToString();
-                }
-                
-            }*/
-   
-            await DisplayAlert("Producto agregado", "El producto "+articuloSeleccionado.nombre+" fue agregado exitosamente", "OK");
-
-        }
 
     }
 }

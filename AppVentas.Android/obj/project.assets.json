@@ -2327,11 +2327,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
       "projectName": "AppVentas.Android",
-      "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
       "packagesPath": "C:\\Users\\carri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\obj\\",
+      "outputPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2352,8 +2352,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
-              "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
+            "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
+              "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
             }
           }
         }

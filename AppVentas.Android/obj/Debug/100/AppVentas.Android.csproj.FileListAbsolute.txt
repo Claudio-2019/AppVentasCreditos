@@ -1191,23 +1191,14 @@ C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\AppVentas.Android.csproj.AssemblyReference.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res.flag
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\44\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\45\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\51\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\54\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\55\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\62\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\63\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\67\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\68\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\70\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\71\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\72\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\73\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\75\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\76\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\79\jl\files.cache
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\87\jl\files.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\R.txt
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\R.cs.flag
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\AppVentas.Android.csproj.CoreCompileInputs.cache
@@ -2361,3 +2352,24 @@ C:\Users\carri\OneDrive\Escritorio\App Ventas Xamarin\AppVentasCreditos\AppVenta
 C:\Users\carri\OneDrive\Escritorio\App Ventas Xamarin\AppVentasCreditos\AppVentas.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\carri\OneDrive\Escritorio\App Ventas Xamarin\AppVentasCreditos\AppVentas.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\carri\OneDrive\Escritorio\App Ventas Xamarin\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\lav1.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\1\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\46\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\52\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\56\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\64\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\69\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\74\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\77\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\80\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\lp\88\jl\files.cache
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\lav1.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\android\assets\Localhost.Abstractions.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\android\assets\Localhost.Abstractions.pdb
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\android\assets\Localhost.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\android\assets\Localhost.pdb
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\android\assets\Newtonsoft.Json.dll
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\lav3.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\lav2.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\co1.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\co2.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\co3.png

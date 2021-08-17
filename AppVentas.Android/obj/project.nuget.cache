@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ozXUXoOk0IHKc8UUv+qSnXzzhez7VOZyZOile7RcUJHaN6QJ/FjTKI0PME2ODwWumcoaJufF0FORWMX199YTcg==",
+  "dgSpecHash": "rSkZP3/X9Or46MYFPN4L7lhjpXoh4cR8Q5xgIvtB8GXTySPv1iwRTb7WIxEy5T1W70j8JyfKy1kGD4oaDwgNSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carri\\.nuget\\packages\\localhost\\1.0.0\\localhost.1.0.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

@@ -22,9 +22,7 @@
             <CollectionView x:Name="listaRefri" HeightRequest="550" SelectionMode="Single" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-             
-
-                        <Grid HeightRequest="100">
+                        <Grid HeightRequest="100" Padding="15">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup Name="CommonStates">
                                     <VisualState Name="Normal" />
@@ -62,8 +60,7 @@
             </CollectionView>
             <Button BackgroundColor="#0167B8" TextColor="White" BorderRadius="20" 
                                     Text="Agregar"
-                                    x:Name="btnAgregarTest"
-                                    Clicked="InsertIntoCarrito"/>
+                                    x:Name="btnAgregar"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
