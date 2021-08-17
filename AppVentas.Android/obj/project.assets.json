@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v10.0": {
+      "Localhost/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Localhost.Abstractions.dll": {},
+          "lib/MonoAndroid10/Localhost.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Localhost.Abstractions.dll": {},
+          "lib/MonoAndroid10/Localhost.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.8.2": {
         "type": "package",
         "compile": {
@@ -994,6 +1014,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Localhost": "1.0.0",
+          "Newtonsoft.Json": "13.0.1",
           "System.Data.SqlClient": "4.8.2",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -1008,6 +1030,57 @@
     }
   },
   "libraries": {
+    "Localhost/1.0.0": {
+      "sha512": "A+xSW+al78gN+X0DANM67efwXtaz+XMA8rNDMGG5fULB+v3Vubx6UUAsB73UfEaKaJLFlEE+f65RiwEYoREPow==",
+      "type": "package",
+      "path": "localhost/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Localhost.Abstractions.dll",
+        "lib/MonoAndroid10/Localhost.Abstractions.pdb",
+        "lib/MonoAndroid10/Localhost.dll",
+        "lib/MonoAndroid10/Localhost.pdb",
+        "lib/Xamarin.iOS10/Localhost.Abstractions.dll",
+        "lib/Xamarin.iOS10/Localhost.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Localhost.dll",
+        "lib/Xamarin.iOS10/Localhost.pdb",
+        "lib/netstandard1.0/Localhost.Abstractions.dll",
+        "lib/netstandard1.0/Localhost.Abstractions.pdb",
+        "lib/netstandard1.0/Localhost.deps.json",
+        "lib/netstandard1.0/Localhost.dll",
+        "lib/netstandard1.0/Localhost.pdb",
+        "localhost.1.0.0.nupkg.sha512",
+        "localhost.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.Data.SqlClient/4.8.2": {
       "sha512": "80vGtW6uLB4AkyrdVuKTXYUyuXDPAsSKbTVfvjndZaRAYxzFzWhJbvUfeAKrN+128ycWZjLIAl61dFUwWHOOTw==",
       "type": "package",
@@ -2254,11 +2327,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
       "projectName": "AppVentas.Android",
-      "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
+      "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\AppVentas.Android.csproj",
       "packagesPath": "C:\\Users\\carri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas.Android\\obj\\",
+      "outputPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2279,8 +2352,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
-              "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
+            "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas\\AppVentas.csproj": {
+              "projectPath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas\\AppVentas.csproj"
             }
           }
         }

@@ -6,6 +6,7 @@ namespace AppVentas
 {
     public partial class App : Application
     {
+        public static string url = "https://a945482ed86d.ngrok.io/api/";//se debe cambiar
         public App()
         {
             InitializeComponent();

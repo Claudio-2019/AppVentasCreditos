@@ -31,7 +31,7 @@
             </FlexLayout>
             <Label Text="Mi perfil" FontSize="25" TextColor="#0167B8" HorizontalTextAlignment="Center" />
             <Button Text="Compras anteriores" x:Name="btnComprasAnt" BackgroundColor="#FFFFFF" TextColor="#00ade5" BorderRadius="5"/>
-            <Button Text="Realizar abono" BackgroundColor="#FFFFFF" TextColor="#00ade5" BorderRadius="5" x:Name="btnAbono"/>
+            <Button Text="Realizar abono" BackgroundColor="#FFFFFF" TextColor="#00ade5" BorderRadius="5" />
             <FlexLayout Direction="Column" Margin="0,20,0,20" >
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightGray"/>
             </FlexLayout>

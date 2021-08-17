@@ -19,18 +19,25 @@
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
             </FlexLayout>
 
-            <CollectionView ItemsSource="{Binding productos}" HeightRequest="550" >
+            <CollectionView x:Name="listaRefri" HeightRequest="550" SelectionMode="Single" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame Padding="0,15,0,15"
-                              
-                               IsClippedToBounds="False"
-                               BackgroundColor="#EFEDEF">
-                            <Grid HeightRequest="100">
-                                <Grid.ColumnDefinitions>
+             
+
+                        <Grid HeightRequest="100">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="White" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width=".3*"/>
                                     <ColumnDefinition Width=".4*"/>
-                                    <ColumnDefinition Width=".3*"/>
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height=".5*"/>
@@ -48,19 +55,15 @@
                                     FontSize="Medium"
                                     Text="{Binding precio,StringFormat='{0:N}'}"/>
 
-                                <Button
-                                    Grid.Row="1"
-                                    Grid.Column="2"
-                                    BackgroundColor="#FFFFFF" TextColor="#00ade5" BorderRadius="10" 
-                                    Text="Agregar"
-                                    x:Name="{Binding id}"
-                                    />
-                                
                             </Grid>
-                        </Frame>
+                        
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <Button BackgroundColor="#0167B8" TextColor="White" BorderRadius="20" 
+                                    Text="Agregar"
+                                    x:Name="btnAgregarTest"
+                                    Clicked="InsertIntoCarrito"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

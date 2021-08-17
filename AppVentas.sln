@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVentas.Android", "AppVentas.Android\AppVentas.Android.csproj", "{BEB02687-7406-450E-9010-716412AFC778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVentas", "AppVentas\AppVentas.csproj", "{26D7A10F-454C-41D7-8DEB-4788C1FF85D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVentas", "AppVentas\AppVentas.csproj", "{26D7A10F-454C-41D7-8DEB-4788C1FF85D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

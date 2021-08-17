@@ -14,6 +14,6 @@ namespace AppVentas.Backend.Models
         public string telefono { get; set; }
         public string residencia { get; set; }
         public int rolId { get; set; }
-        public string contraseña { get; set; }
+        public string contrasena { get; set; }
     }
 }

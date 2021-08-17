@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "nt3fEkOXA6jaO/DjsyOYXX88Rw+iqA5uCBZahObxRmZN3rEU6e0LmXjVX2EuJr1PKUuTPVkCv52wEZ74nOzNKw==",
+  "dgSpecHash": "7zfzHqL4LbZctYchSnl3b3+DMrywpK141SE8vJvtqt7J5RC3EdCYb0BlTzh1v5X5y+L9YjhDaoUfauw300NDeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
+  "projectFilePath": "C:\\Users\\carri\\OneDrive\\Escritorio\\App Ventas Xamarin\\AppVentasCreditos\\AppVentas\\AppVentas.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\carri\\.nuget\\packages\\localhost\\1.0.0\\localhost.1.0.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\carri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\carri\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

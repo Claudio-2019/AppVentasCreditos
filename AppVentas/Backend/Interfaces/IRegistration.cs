@@ -8,8 +8,8 @@ namespace AppVentas.Backend.Interfaces
 {
     interface IRegistration
     {
-        void CreateUser(DTOUser newUser);
-      
+        Task<string> CreateUser(DTOUser newUser);
+        
         
     }
 }

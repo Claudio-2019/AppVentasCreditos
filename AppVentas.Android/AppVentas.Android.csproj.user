@@ -3,6 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Samsung SM-N985F</SelectedDevice>
     <ActiveDebugProfile>Samsung SM-N985F</ActiveDebugProfile>
-    <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
+    <DefaultDevice>nexus_6_q_10_0_-_api_29</DefaultDevice>
   </PropertyGroup>
 </Project>

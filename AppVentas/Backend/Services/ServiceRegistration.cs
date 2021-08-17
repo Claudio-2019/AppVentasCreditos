@@ -1,53 +1,50 @@
 ﻿using AppVentas.Backend.Interfaces;
 using AppVentas.Backend.Models;
+using Localhost;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace AppVentas.Backend.Services
 {
     class ServiceRegistration : IRegistration
     {
-        public void CreateUser(DTOUser newUser)
+        public static string RestUrl = DeviceInfo.Platform == DevicePlatform.Android ? @"http://10.0.2.2:5000/api/Login" : @"http://localhost:5000/api/Login";
+
+        private string ResultadoInsert;
+        public async Task<string> CreateUser(DTOUser newUser)
         {
+           
 
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
-            using (SqlConnection sqlConnection = new
-                SqlConnection(@"Data Source=DESKTOP-E9988JL\SQLEXPRESS;Initial Catalog=GolloVentasDB-test;Integrated Security=True"))
+            var clienteWeb = new HttpClient(clientHandler);
+ 
+            var jsonUser = JsonConvert.SerializeObject(newUser);
+
+            var contentJsonUser = new StringContent(jsonUser, Encoding.UTF8, "application/json");
+
+            var response = await clienteWeb.PostAsync(RestUrl, contentJsonUser);
+
+            ResultadoInsert = response.StatusCode.ToString();
+
+            if (ResultadoInsert.Equals("200"))
             {
-                SqlCommand sqlCommand = new SqlCommand(@"INSERT INTO usuario (cedula, nombre, apellidos, 
-                                                            email, telefono, residencia, rolId,contrasena) VALUES 
-                                                            (@cedula, @nombre, @apellidos, 
-                                                            @email, @telefono, @residencia, @rolId,@contrasena)", sqlConnection);
-
-                sqlCommand.Parameters.AddWithValue("@cedula", newUser.cedula);
-                sqlCommand.Parameters.AddWithValue("@nombre", newUser.nombre);
-                sqlCommand.Parameters.AddWithValue("@apellidos", newUser.apellidos);
-                sqlCommand.Parameters.AddWithValue("@email", newUser.email);
-                sqlCommand.Parameters.AddWithValue("@telefono", newUser.telefono);
-                sqlCommand.Parameters.AddWithValue("@residencia", newUser.residencia);
-                sqlCommand.Parameters.AddWithValue("@rolId", 1);
-                sqlCommand.Parameters.AddWithValue("@contrasena", newUser.contraseña);
-
-                if (sqlConnection.State == System.Data.ConnectionState.Closed)
-                {
-                    sqlConnection.Open();
-
-                    sqlCommand.ExecuteNonQuery();
-
-                    sqlConnection.Close();
-                }
+                return "EL USUARIO FUE REGISTRADO EXITOSAMENTE";
             }
-
+            else
+            {
+                return "OCURRIO UN ERROR AL REGISTRAR EL USUARIO";
+            }
             
         }
-
-
-
-
-
 
 
     }

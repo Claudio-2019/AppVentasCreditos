@@ -7,8 +7,8 @@
         <StackLayout  BackgroundColor="#EFEDEF" Padding="15,15,15,15" >
 
 
-            <Image Source="gollo.png" Aspect="AspectFit" WidthRequest="80" HeightRequest="80" Margin="0,5,5,0"/>
-            <FlexLayout Direction="Column" Margin="0,5,0,5" >
+            <Image Source="gollo.png" Aspect="AspectFit" WidthRequest="100" HeightRequest="100" Margin="0,5,5,0"/>
+            <FlexLayout Direction="Column" Margin="0,10,0,10" >
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
             </FlexLayout>
 
@@ -29,7 +29,7 @@
                 <Entry  x:Name="InputTelefono" Placeholder="&#xf095;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
 
                 <Label Text="Residencia" TextColor="#333333" FontSize="Medium"/>
-                <Entry  x:Name="InputResidencia" Placeholder="&#xf5a0;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+                <Entry  x:Name="InputResidencia" Placeholder="&#xf095;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
 
                 <Label Text="Contraseña" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
                 <Entry  x:Name="InputContrasena" Placeholder="&#xf023;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" IsPassword="True" TextColor="#333333"/>
@@ -37,7 +37,8 @@
                 <Label Text="Confirmar contraseña" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
                 <Entry  x:Name="InputConfirmarContrasena" Placeholder="&#xf023;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" IsPassword="True" TextColor="#333333"/>
 
-                <Button Text="Registrarse" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnIr" Margin="0,0,0,0" Clicked="btnIr_Clicked" />
+                <Button Text="Registrarse" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnIr" Margin="0,10,0,0" Clicked="btnIr_Clicked" />
+                <Label x:Name="txt_ResultadoRegistro" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
             </StackLayout>
 
         </StackLayout>

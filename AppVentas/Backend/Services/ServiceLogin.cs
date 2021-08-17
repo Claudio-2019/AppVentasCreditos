@@ -21,7 +21,7 @@ namespace AppVentas.Backend.Services
                 SqlCommand sqlCommand = new SqlCommand(@"SELECT cedula, nombre, apellidos, email, telefono, residencia, rolid, contrasena 
                 FROM ususario Where email = @email and contrasena = @contrasena ", sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@email", credentials.email);
-                sqlCommand.Parameters.AddWithValue("@contrasena", credentials.contraseña);
+                sqlCommand.Parameters.AddWithValue("@contrasena", credentials.contrasena);
 
                 sqlConnection.Open();
 
@@ -47,12 +47,12 @@ namespace AppVentas.Backend.Services
                         telefono = sqlDataReader.GetString(4),
                         residencia = sqlDataReader.GetString(5),
                         rolId = sqlDataReader.GetInt32(6),
-                        contraseña = sqlDataReader.GetString(7)
+                        contrasena = sqlDataReader.GetString(7)
                     };
                     CurrentUsers.Add(DBUsers);
                 }
 
-                if (CurrentUsers.Contains(credentials.email)&&CurrentUsers.Contains(credentials.contraseña))
+                if (CurrentUsers.Contains(credentials.email)&&CurrentUsers.Contains(credentials.contrasena))
                 {
                     if (CurrentUsers.Contains(1))
                     {

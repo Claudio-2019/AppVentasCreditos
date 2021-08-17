@@ -16,8 +16,8 @@
             <FlexLayout Direction="Column" Margin="0,20,0,20" >
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
             </FlexLayout>
-
-            <CollectionView ItemsSource="{Binding productos}"  HeightRequest="550">
+          
+            <CollectionView ItemsSource="{Binding listaRefris}"  HeightRequest="550">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame Padding="0,20,0,20"
@@ -34,25 +34,28 @@
                                     <RowDefinition Height=".5*"/>
                                     <RowDefinition Height=".5*"/>
                                 </Grid.RowDefinitions>
-                                <Image Grid.RowSpan="2" Source="{Binding imagen}"/>
+                                <Image Grid.RowSpan="2" Source="listaRefris.imagen"/>
                                 <Label Grid.Column="1"
                                        FontAttributes="Bold"
                                        FontSize="Large"
-                                       Text="{Binding nombre}"
+                                       Text="{Binding listaRefris.descripcion}"
                                        VerticalOptions="Center"/>
                                 <Label
                                     Grid.Row="1"
                                     Grid.Column="1"
                                     FontSize="Medium"
-                                    Text="{Binding precio,StringFormat='{0:N}'}"/>
+                                    Text="{Binding  listaRefris.nombre,StringFormat='{0:N}'}"/>
 
                                 <Button
                                     Grid.Row="1"
                                     Grid.Column="2"
                                     BackgroundColor="DarkRed" TextColor="White" BorderRadius="10"
                                     Text="Quitar" 
-                                    x:Name="{Binding id}"
+                                    x:Name="btnEliminarItem"
+                                    Clicked="EliminarItemCarrito"
                                     />
+
+                                <Button Text="Finalizar compra" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnFinalizar" Margin="0,20,0,0" />
 
                             </Grid>
                         </Frame>
