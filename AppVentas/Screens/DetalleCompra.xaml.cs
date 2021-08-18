@@ -48,6 +48,7 @@ namespace AppVentas
 
             var response = await client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(factura), Encoding.UTF8, "application/json"));
             await DisplayAlert("Confirmación de compra", "Su compra ha sido procesada con éxito", "OK");
+            App.Carrito.Clear();
 
             ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
