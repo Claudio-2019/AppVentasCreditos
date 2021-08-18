@@ -2373,3 +2373,4 @@ C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\co1.png
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\co2.png
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\co3.png
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas.Android\obj\Debug\100\res\drawable\refri6.png

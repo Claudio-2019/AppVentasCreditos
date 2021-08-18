@@ -6535,9 +6535,10 @@ public final class R {
     public static final int refri3=0x7f070097;
     public static final int refri4=0x7f070098;
     public static final int refri5=0x7f070099;
-    public static final int test_custom_background=0x7f07009a;
-    public static final int tooltip_frame_dark=0x7f07009b;
-    public static final int tooltip_frame_light=0x7f07009c;
+    public static final int refri6=0x7f07009a;
+    public static final int test_custom_background=0x7f07009b;
+    public static final int tooltip_frame_dark=0x7f07009c;
+    public static final int tooltip_frame_light=0x7f07009d;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
