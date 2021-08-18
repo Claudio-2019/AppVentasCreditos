@@ -15,9 +15,7 @@ namespace AppVentas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        private ServiceRegistration serviceRegistration = new ServiceRegistration();
-        private DTOUser user;
-        public string RegistroInfo;
+        
 
         private string url = App.url + "Usuarios";
         HttpClient client = new HttpClient();
@@ -26,39 +24,11 @@ namespace AppVentas
             InitializeComponent();
         }
 
-       
-
-        async void ShowMessage(object sender, EventArgs e)
-        {
-            await DisplayAlert("Alert", RegistroInfo, "OK");
-        }
+      
 
         async void btnIr_Clicked(object sender, EventArgs e)
         {
-            /*try
-            {
-                user = new DTOUser
-                {
-                    nombre = this.InputNombre.Text,
-                    cedula = this.InputCedula.Text,
-                    apellidos = this.InputApellido.Text,
-                    email = this.InputEmail.Text,
-                    telefono = this.InputTelefono.Text,
-                    residencia = this.InputResidencia.Text,
-                    rolId = 1,
-                    contrasena = this.InputContrasena.Text
-                };
-
-                var PostUser = serviceRegistration.CreateUser(user).Result;
-
-                ((NavigationPage)this.Parent).PushAsync(new MainPage());
-
-            }
-            catch (Exception error)
-            {
-
-                await DisplayAlert("Alert", error.Message, "OK");
-            }*/
+            
 
             DTOUser usu = new DTOUser
             {

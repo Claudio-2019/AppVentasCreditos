@@ -1,9 +1,12 @@
-﻿using System;
+﻿using AppVentas.Backend.Models;
+using AppVentas.Backend.Services;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +15,11 @@ namespace AppVentas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetalleCompra : ContentPage
     {
+        private string url = App.url + "Facturas";
+        HttpClient client = new HttpClient();
+        decimal pagoPorMes = 0;
+        decimal saldo = 0;
+        int cuotasPendientes = 0;
         public DetalleCompra()
         {
             InitializeComponent();
@@ -19,7 +27,28 @@ namespace AppVentas
             btnInicio.Clicked += BtnInicio_Clicked;
             btnLogout.Clicked += BtnLogout_Clicked;
             plazo.SelectedIndexChanged += Plazo_SelectedIndexChanged;
+            btnFinalizar.Clicked += BtnFinalizar_Clicked;
+        }
 
+        private async void BtnFinalizar_Clicked(object sender, EventArgs e)
+        {
+            FacturaModel factura = new FacturaModel
+            {
+                estadoId=1,
+                plazoId=1,
+                garantiaMeses=12,
+                pagoPorMes= pagoPorMes,
+                saldo=saldo,
+                cedula=App.cedula,
+                fecha=DateTime.Today,
+                cuotasPendientes= cuotasPendientes
+        };
+
+
+            var response = await client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(factura), Encoding.UTF8, "application/json"));
+            await DisplayAlert("Confirmación de compra", "Su compra ha sido procesada con éxito", "OK");
+
+            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
         }
 
         private decimal Cuota(decimal porcentaje, int plazo) {
@@ -53,6 +82,8 @@ namespace AppVentas
             return total;
         }
 
+
+       
         private void Plazo_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (plazo.SelectedIndex==0) {
@@ -62,6 +93,9 @@ namespace AppVentas
                 lblCantidad.Text = "Cantidad de artículos: "+App.Carrito.Count();
                 lblGarantia.Text = "Garantía: 12 meses";
                 lblMonto.Text = "Total: " + decimal.Round(Total(12), 2) +" colones";
+                pagoPorMes = decimal.Round(Cuota(4, 12), 2);
+                saldo = decimal.Round(Total(12), 2);
+                cuotasPendientes = 12;
             }
             else if (plazo.SelectedIndex == 1)
             {
@@ -71,6 +105,9 @@ namespace AppVentas
                 lblCantidad.Text = "Cantidad de artículos: " + App.Carrito.Count();
                 lblGarantia.Text = "Garantía: 12 meses";
                 lblMonto.Text = "Total: " + decimal.Round(Total(18), 2) + " colones";
+                pagoPorMes = decimal.Round(Cuota(5, 18), 2);
+                saldo = decimal.Round(Total(18), 2);
+                cuotasPendientes = 18;
             }
             else if (plazo.SelectedIndex == 2)
             {
@@ -80,6 +117,9 @@ namespace AppVentas
                 lblCantidad.Text = "Cantidad de artículos: " + App.Carrito.Count();
                 lblGarantia.Text = "Garantía: 12 meses";
                 lblMonto.Text = "Total: " + decimal.Round(Total(24), 2) + " colones";
+                pagoPorMes = decimal.Round(Cuota(6, 24), 2);
+                saldo = decimal.Round(Total(24), 2);
+                cuotasPendientes = 24;
             }
             else if (plazo.SelectedIndex == 3)
             {
@@ -89,6 +129,9 @@ namespace AppVentas
                 lblCantidad.Text = "Cantidad de artículos: " + App.Carrito.Count();
                 lblGarantia.Text = "Garantía: 12 meses";
                 lblMonto.Text = "Total: " + decimal.Round(Total(36), 2) + " colones";
+                pagoPorMes = decimal.Round(Cuota(7, 36), 2);
+                saldo = decimal.Round(Total(36), 2);
+                cuotasPendientes = 36;
             }
         }
 

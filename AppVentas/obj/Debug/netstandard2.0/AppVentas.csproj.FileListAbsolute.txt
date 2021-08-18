@@ -93,9 +93,9 @@ C:\Users\carri\OneDrive\Escritorio\App Ventas Xamarin\AppVentasCreditos\AppVenta
 C:\Users\carri\OneDrive\Escritorio\App Ventas Xamarin\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\AppVentas.csproj.AssemblyReference.cache
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Carrito.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Cocinas.xaml.g.cs
-C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\ComprasAnteriores.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\DetalleCompra.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Lavadoras.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\MenuPrincipal.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Refrigeradoras.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Registro.xaml.g.cs
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Facturas.xaml.g.cs
