@@ -31,12 +31,12 @@ namespace AppVentas.Screens
             btnAbono.Clicked += BtnAbono_Clicked;
         }
 
-        private async void BtnAbono_Clicked(object sender, EventArgs e)
+        private void BtnAbono_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Factura seleccionada", "Factura ID " + facturaSeleccionada.facturaId+ " fue agregado exitosamente", "OK");
+            ((NavigationPage)this.Parent).PushAsync(new Abono());
         }
 
-        private FacturaModel facturaSeleccionada = new FacturaModel();
+        public static FacturaModel facturaSeleccionada = new FacturaModel();
         private void ListaFacturas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var facturas = e.CurrentSelection;

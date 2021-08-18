@@ -99,3 +99,4 @@ C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstan
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Refrigeradoras.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Registro.xaml.g.cs
 C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Facturas.xaml.g.cs
+C:\Users\carri\OneDrive\Escritorio\AppVentasCreditos\AppVentas\obj\Debug\netstandard2.0\Screens\Abono.xaml.g.cs

@@ -19,39 +19,63 @@
                 <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#0167B8"/>
             </FlexLayout>
 
-            <Grid x:Name="titulos" IsVisible="false">
-                <Label Grid.Row="0" Grid.Column="0" Text="Factura ID" FontAttributes="Bold" />
-                <Label Grid.Row="0" Grid.Column="1" Text="Cuotas pendientes" FontAttributes="Bold"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Pago por mes" FontAttributes="Bold"/>
-                <Label Grid.Row="0" Grid.Column="3" Text="Saldo" FontAttributes="Bold"/>
-            </Grid>
-
-            <CollectionView x:Name="listaFacturas" SelectionMode="Single" >
+            <CollectionView x:Name="listaFacturas" HeightRequest="550" SelectionMode="Single" >
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        <Grid HeightRequest="100" Padding="15">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="White" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                
+                            <Label Grid.Column="0"
+                                    Grid.Row="0"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       Text="Factura ID"
+                                       VerticalOptions="Center"/>
+                            <Label Grid.Column="0"
+                                   Grid.Row="1"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       Text="Cuota por mes"
+                                       VerticalOptions="Center"/>
+                            <Label Grid.Column="0"
+                                   Grid.Row="2"
+                                       FontAttributes="Bold"
+                                       FontSize="Medium"
+                                       Text="Saldo"
+                                       VerticalOptions="Center"/>
+                            <Label Grid.Column="1"
+                                   Grid.Row="0"
+                                       FontSize="Medium"
+                                       Text="{Binding facturaId}"
+                                       VerticalOptions="Center"/>
+                            <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    FontSize="Medium"
+                                    Text="{Binding pagoPorMes,StringFormat='{0:N}'}"
+                                VerticalOptions="Center"/>
+                            <Label
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    FontSize="Medium"
+                                    Text="{Binding saldo,StringFormat='{0:N}'}"
+                                VerticalOptions="Center"/>
+                            
 
-                            <Grid>
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup Name="CommonStates">
-                                        <VisualState Name="Normal" />
-                                        <VisualState Name="Selected">
-                                            <VisualState.Setters>
-                                                <Setter Property="BackgroundColor" Value="White" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
-                                <Label Grid.Column="0" VerticalOptions="Center" VerticalTextAlignment="Center" Text="{Binding facturaId}" />
-                                <Label Grid.Column="1" VerticalOptions="Center" VerticalTextAlignment="Center" Text="{Binding cuotasPendientes}" />
-                                <Label Grid.Column="2" VerticalOptions="Center" VerticalTextAlignment="Center" Text="{Binding pagoPorMes}" />
-                                <Label Grid.Column="3" VerticalOptions="Center" VerticalTextAlignment="Center" Text="{Binding saldo}" />
-                            </Grid>
-                        </ViewCell>
+                        </Grid>
+
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
             <Button BackgroundColor="#0167B8" TextColor="White" BorderRadius="20" 
                                     Text="Realizar abono"
                                     x:Name="btnAbono"/>

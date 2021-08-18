@@ -19,6 +19,7 @@ namespace AppVentas
         HttpClient client = new HttpClient();
         decimal pagoPorMes = 0;
         decimal saldo = 0;
+        int plazoSeleccionado = 0;
         int cuotasPendientes = 0;
         public DetalleCompra()
         {
@@ -34,8 +35,8 @@ namespace AppVentas
         {
             FacturaModel factura = new FacturaModel
             {
-                estadoId=1,
-                plazoId=1,
+                estadoId=2,//automaticamente queda cuota pendiente, una vez que se haga el abono el estado pasa a 1 (al dia)
+                plazoId=plazoSeleccionado,
                 garantiaMeses=12,
                 pagoPorMes= pagoPorMes,
                 saldo=saldo,
@@ -96,6 +97,7 @@ namespace AppVentas
                 pagoPorMes = decimal.Round(Cuota(4, 12), 2);
                 saldo = decimal.Round(Total(12), 2);
                 cuotasPendientes = 12;
+                plazoSeleccionado = 1;
             }
             else if (plazo.SelectedIndex == 1)
             {
@@ -108,6 +110,7 @@ namespace AppVentas
                 pagoPorMes = decimal.Round(Cuota(5, 18), 2);
                 saldo = decimal.Round(Total(18), 2);
                 cuotasPendientes = 18;
+                plazoSeleccionado = 2;
             }
             else if (plazo.SelectedIndex == 2)
             {
@@ -120,6 +123,7 @@ namespace AppVentas
                 pagoPorMes = decimal.Round(Cuota(6, 24), 2);
                 saldo = decimal.Round(Total(24), 2);
                 cuotasPendientes = 24;
+                plazoSeleccionado = 3;
             }
             else if (plazo.SelectedIndex == 3)
             {
@@ -132,6 +136,7 @@ namespace AppVentas
                 pagoPorMes = decimal.Round(Cuota(7, 36), 2);
                 saldo = decimal.Round(Total(36), 2);
                 cuotasPendientes = 36;
+                plazoSeleccionado = 4;
             }
         }
 
