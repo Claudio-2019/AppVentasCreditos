@@ -16,8 +16,8 @@
                 </Grid.RowDefinitions>
             </Grid>
             <StackLayout Grid.Row="1" Padding="10,20">
-                <Label Text="Nombre de usuario" TextColor="White" FontSize="Medium" x:Name="inputCorreo"/>
-                <Entry x:Name="txt_email" Placeholder="&#xf007;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="#FFFFFF" TextColor="White" />
+                <Label Text="Identificación" TextColor="White" FontSize="Medium" x:Name="inputCorreo"/>
+                <Entry x:Name="txt_id" Placeholder="&#xf007;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="#FFFFFF" TextColor="White" />
                 <Label Text="Contraseña" TextColor="White" FontSize="Medium" Margin="0,5,0,0" x:Name="inputContrasena"/>
                 <Entry x:Name="txt_pass" Placeholder="&#xf023;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="#FFFFFF" IsPassword="True" TextColor="White"/>
                 <Button Text="Ingresar" BackgroundColor="#00ade5" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnIr" Margin="0,10,0,0" Clicked="BtnIr_Clicked"/>
