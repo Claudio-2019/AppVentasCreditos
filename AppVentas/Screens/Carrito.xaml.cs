@@ -44,6 +44,12 @@ namespace AppVentas
 
         protected override void OnAppearing()
         {
+            if (App.Carrito.Count()==0) { btnCompra.IsEnabled = false; }
+            else btnCompra.IsEnabled = true;
+
+            if (App.Carrito.Count() == 0) { btnEliminar.IsEnabled = false; }
+            else btnEliminar.IsEnabled = true;
+
 
             listaCarrito.ItemsSource = App.Carrito;
             base.OnAppearing();
@@ -53,7 +59,13 @@ namespace AppVentas
         {
             App.Carrito.Remove(articuloSeleccionado);
             await DisplayAlert("Producto eliminado", "El producto " + articuloSeleccionado.nombre + " fue eliminado exitosamente", "OK");
-          
+
+            if (App.Carrito.Count() == 0) { btnCompra.IsEnabled = false; }
+            else btnCompra.IsEnabled = true;
+
+            if (App.Carrito.Count() == 0) { btnEliminar.IsEnabled = false; }
+            else btnEliminar.IsEnabled = true;
+
         }
 
         private void BtnCompra_Clicked(object sender, EventArgs e)

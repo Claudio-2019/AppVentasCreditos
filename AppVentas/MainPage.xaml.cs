@@ -51,6 +51,7 @@ namespace AppVentas
                 if (usuarios[i].cedula.Equals(txt_id.Text) && usuarios[i].contrasena.Equals(txt_pass.Text)) {
                     ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
                     App.cedula = usuarios[i].cedula;
+                    App.correo = usuarios[i].email;
                     token = false;
                 }
             }

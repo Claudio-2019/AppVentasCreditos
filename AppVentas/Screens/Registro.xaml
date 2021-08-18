@@ -12,32 +12,107 @@
             </FlexLayout>
 
             <StackLayout >
-                <Label Text="Número de cédula" TextColor="#333333" FontSize="Medium"/>
-                <Entry x:Name="InputCedula" Placeholder="&#xf2b9;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
 
-                <Label Text="Nombre" TextColor="#333333" FontSize="Medium"/>
-                <Entry  x:Name="InputNombre" Placeholder="&#xf007;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf2b9;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Cédula" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputCedula"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
 
-                <Label Text="Apellidos" TextColor="#333333" FontSize="Medium"/>
-                <Entry  x:Name="InputApellido" Placeholder="&#xf2bb;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-                <Label Text="Email" TextColor="#333333" FontSize="Medium"/>
-                <Entry  x:Name="InputEmail" Placeholder="&#xf674;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf007;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Nombre" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputNombre"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
 
-                <Label Text="Teléfono" TextColor="#333333" FontSize="Medium"/>
-                <Entry  x:Name="InputTelefono" Placeholder="&#xf095;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-                <Label Text="Residencia" TextColor="#333333" FontSize="Medium"/>
-                <Entry  x:Name="InputResidencia" Placeholder="&#xf689;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" TextColor="#333333" />
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf2bb;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Apellidos" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputApellido"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
 
-                <Label Text="Contraseña" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
-                <Entry  x:Name="InputContrasena" Placeholder="&#xf023;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" IsPassword="True" TextColor="#333333"/>
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-                <Label Text="Confirmar contraseña" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
-                <Entry  x:Name="InputConfirmarContrasena" Placeholder="&#xf023;" FontFamily="{StaticResource FontAwesomeSolid}" PlaceholderColor="Gray" IsPassword="True" TextColor="#333333"/>
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf674;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Email" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputEmail"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
 
-                <Button Text="Registrarse" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnIr" Margin="0,5,0,0" Clicked="btnIr_Clicked" />
-                <Label x:Name="txt_ResultadoRegistro" TextColor="#333333" FontSize="Medium" Margin="0,5,0,0"/>
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf095;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Teléfono" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputTelefono"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
+
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf689;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Residencia" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputResidencia"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
+
+
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="95"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf023;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Contraseña" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputContrasena" IsPassword="True"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
+
+            <Grid HeightRequest="75">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="95"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="&#xf023;" TextColor="Gray" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Confirmar" TextColor="#333333" FontSize="Medium" VerticalOptions="Center"/>
+                <Entry Grid.Column="2" Grid.Row="0" x:Name="InputConfirmar" IsPassword="True"  PlaceholderColor="Gray" TextColor="#333333" VerticalOptions="Center" />
+            </Grid>
+
+
+            <Button Text="Registrarse" BackgroundColor="#0167B8" TextColor="#FFFFFF" BorderRadius="20" x:Name="btnIr" Margin="0,5,0,0" Clicked="btnIr_Clicked" />
+               
             </StackLayout>
 
         </StackLayout>

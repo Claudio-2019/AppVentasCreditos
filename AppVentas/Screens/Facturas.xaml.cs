@@ -52,6 +52,8 @@ namespace AppVentas.Screens
         IList<FacturaModel> facturasUsu = new ObservableCollection<FacturaModel>();
         protected override async void OnAppearing()
         {
+            
+
             string contenido = await cliente.GetStringAsync(url);
             lista = JsonConvert.DeserializeObject<IList<FacturaModel>>(contenido);
             for (int i = 0; i < lista.Count(); i++)
@@ -62,6 +64,9 @@ namespace AppVentas.Screens
                     facturasUsu.Add(lista[i]);
                 }
             }
+            if (facturasUsu.Count() == 0) { btnAbono.IsEnabled = false; }
+            else btnAbono.IsEnabled = true;
+
             listaFacturas.ItemsSource = new ObservableCollection<FacturaModel>(facturasUsu);
             base.OnAppearing();
         }

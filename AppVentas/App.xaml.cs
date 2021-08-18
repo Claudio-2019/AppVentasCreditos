@@ -10,6 +10,7 @@ namespace AppVentas
     public partial class App : Application
     {
         public static string cedula = string.Empty;//Se actualiza cuando se hace login
+        public static string correo = string.Empty;
         public static string url = "https://a945482ed86d.ngrok.io/api/";//se debe cambiar
         public static IList<ArticuloModel> Carrito = new ObservableCollection<ArticuloModel>();//Variable estatica de carrito
         public App()

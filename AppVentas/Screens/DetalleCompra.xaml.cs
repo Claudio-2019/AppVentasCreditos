@@ -1,14 +1,17 @@
-﻿using AppVentas.Backend.Models;
-using AppVentas.Backend.Services;
-using Newtonsoft.Json;
+﻿using AppVentas.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using AppVentas.Backend.Models;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections.ObjectModel;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace AppVentas
 {
@@ -21,6 +24,7 @@ namespace AppVentas
         decimal saldo = 0;
         int plazoSeleccionado = 0;
         int cuotasPendientes = 0;
+        int facturaID = 0;
         public DetalleCompra()
         {
             InitializeComponent();
@@ -33,24 +37,45 @@ namespace AppVentas
 
         private async void BtnFinalizar_Clicked(object sender, EventArgs e)
         {
-            FacturaModel factura = new FacturaModel
+            try
             {
-                estadoId=2,//automaticamente queda cuota pendiente, una vez que se haga el abono el estado pasa a 1 (al dia)
-                plazoId=plazoSeleccionado,
-                garantiaMeses=12,
-                pagoPorMes= pagoPorMes,
-                saldo=saldo,
-                cedula=App.cedula,
-                fecha=DateTime.Today,
-                cuotasPendientes= cuotasPendientes
-        };
+                FacturaModel factura = new FacturaModel
+                {
+                    estadoId = 2,//automaticamente queda cuota pendiente, una vez que se haga el abono el estado pasa a 1 (al dia)
+                    plazoId = plazoSeleccionado,
+                    garantiaMeses = 12,
+                    pagoPorMes = pagoPorMes,
+                    saldo = saldo,
+                    cedula = App.cedula,
+                    fecha = DateTime.Today,
+                    cuotasPendientes = cuotasPendientes
+                };
 
 
-            var response = await client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(factura), Encoding.UTF8, "application/json"));
-            await DisplayAlert("Confirmación de compra", "Su compra ha sido procesada con éxito", "OK");
-            App.Carrito.Clear();
+                var response = await client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(factura), Encoding.UTF8, "application/json"));
 
-            ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
+                Correo correo = new Correo();
+                correo.Enviar("Compra realizada con éxito", facturaID, 12, pagoPorMes, saldo, App.cedula,
+                    cuotasPendientes, DateTime.Today, App.correo);
+                await DisplayAlert("Confirmación de compra", "Su compra ha sido procesada con éxito", "OK");
+                App.Carrito.Clear();
+
+                ((NavigationPage)this.Parent).PushAsync(new MenuPrincipal());
+            }
+            catch (Exception)
+            {
+
+                DisplayAlert("Error", "Ha ocurrido un error inesperado", "OK");
+            }
+        }
+
+        IList<FacturaModel> lista = new ObservableCollection<FacturaModel>();
+        protected override async void OnAppearing()
+        {
+            string contenido = await client.GetStringAsync(url);
+            lista = JsonConvert.DeserializeObject<IList<FacturaModel>>(contenido);
+            facturaID = lista.Count() + 1;
+            base.OnAppearing();
         }
 
         private decimal Cuota(decimal porcentaje, int plazo) {

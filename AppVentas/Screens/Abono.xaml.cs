@@ -62,6 +62,9 @@ namespace AppVentas.Screens
                     cuotasPendientes = Facturas.facturaSeleccionada.cuotasPendientes - 1
                 };
 
+                Correo correo = new Correo();
+                correo.Enviar("Abono realizado con éxito", Facturas.facturaSeleccionada.facturaId, 12, Facturas.facturaSeleccionada.pagoPorMes, Facturas.facturaSeleccionada.saldo - Facturas.facturaSeleccionada.pagoPorMes, App.cedula,
+                    Facturas.facturaSeleccionada.cuotasPendientes - 1, Facturas.facturaSeleccionada.fecha, App.correo);
 
                 var response = await client.PutAsync(url, new StringContent(JsonConvert.SerializeObject(factura), Encoding.UTF8, "application/json"));
                 await DisplayAlert("Confirmación de abono", "El abono a la factura ID " + Facturas.facturaSeleccionada.facturaId + " se ha realizado con éxito", "OK");
