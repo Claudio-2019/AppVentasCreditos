@@ -75,6 +75,7 @@ namespace AppVentas
             string contenido = await client.GetStringAsync(url);
             lista = JsonConvert.DeserializeObject<IList<FacturaModel>>(contenido);
             facturaID = lista.Count() + 1;
+            btnFinalizar.IsEnabled = false;
             base.OnAppearing();
         }
 
@@ -110,9 +111,9 @@ namespace AppVentas
         }
 
 
-       
         private void Plazo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btnFinalizar.IsEnabled = true;
             if (plazo.SelectedIndex==0) {
                 lblInteres.Text = "Tasa de interés: 4%";
                 lblCuota.Text = "Cuota por mes: "+decimal.Round(Cuota(4, 12),2)+" colones";
